@@ -53,11 +53,11 @@ public class contenido_avanzado extends AppCompatActivity implements RecyclerAda
     }
     private List<ItemList> getItems() {
         List<ItemList> itemLists = new ArrayList<>();
-        itemLists.add(new ItemList("Tema 1", "Descripcion del tema 1 ", R.drawable.transparent_b));
-        itemLists.add(new ItemList("Tema 2", "Descripcion del tema 2.", R.drawable.transparent_b));
-        itemLists.add(new ItemList("Tema 3", "Descripcion del tema 3.", R.drawable.transparent_b));
-        itemLists.add(new ItemList("Tema 4", "Descripcion del tema 4.", R.drawable.transparent_b));
-        itemLists.add(new ItemList("Tema 5", "Descripcion del tema 5.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("include y require", "Nos ayuda a incluir varios archivos, incluidos texto o códigos, en un solo programa.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("manejo de archivos", "fopen(), fread(), fwrite(), fclose().", R.drawable.transparent_b));
+        itemLists.add(new ItemList("función fopen()", "Se usa para abrir un archivo o una URL.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("función fread()", "Es una función incorporada que lee bytes de longitud.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("función fclose()", "Función incorporada que se utiliza para cerrar un archivo", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 6", "Descripcion del tema 6.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 7", "Descripcion del tema 7.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 8", "Descripcion del tema 8.", R.drawable.transparent_b));

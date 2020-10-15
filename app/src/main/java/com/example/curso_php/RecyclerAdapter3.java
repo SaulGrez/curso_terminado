@@ -57,25 +57,25 @@ public class RecyclerAdapter3 extends RecyclerView.Adapter<RecyclerAdapter3.Recy
             @Override
             public void onClick(View v) {
                 //itemClick.itemClick(item);
-               if (items.get(position).getTitulo().matches("Tema 1")){
+               if (items.get(position).getTitulo().matches("include y require")){
                     Intent iractivity1 = new Intent(context, tema1avaActivity.class);
                     context.startActivity(iractivity1);
                 }
 
-                if (items.get(position).getTitulo().matches("Tema 2")){
+                if (items.get(position).getTitulo().matches("manejo de archivos")){
                     Intent iractivity2 = new Intent(context, tema2avaActivity.class);
                     context.startActivity(iractivity2);
                 }
-                if (items.get(position).getTitulo().matches("Tema 3")){
+                if (items.get(position).getTitulo().matches("función fopen()")){
                     Intent iractivity3 = new Intent(context, tema3avaActivity.class);
                     context.startActivity(iractivity3);
                 }
-                if (items.get(position).getTitulo().matches("Tema 4")){
+                if (items.get(position).getTitulo().matches("función fread()")){
                     Intent iractivity4 = new Intent(context, tema4avaActivity.class);
                     context.startActivity(iractivity4);
                 }
 
-                if (items.get(position).getTitulo().matches("Tema 5")){
+                if (items.get(position).getTitulo().matches("función fclose()")){
                     Intent iractivity5 = new Intent(context, tema5avaActivity.class);
                     context.startActivity(iractivity5);
                 }

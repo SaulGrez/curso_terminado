@@ -142,15 +142,16 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
                      context.startActivity(iractivity14);
                  }
 
-                 if (items.get(position).getTitulo().matches("tema 15")){
+                 if (items.get(position).getTitulo().matches("while")){
                      Intent iractivity15 = new Intent(context, tema15Activity.class);
                      context.startActivity(iractivity15);
                  }
-                 if (items.get(position).getTitulo().matches("tema 16")){
+                if (items.get(position).getTitulo().matches("do while")){
                      Intent iractivity16 = new Intent(context, tema16Activity.class);
                      context.startActivity(iractivity16);
                  }
-                 if (items.get(position).getTitulo().matches("tema 17")){
+
+                  /* if (items.get(position).getTitulo().matches("tema 17")){
                      Intent iractivity17 = new Intent(context, tema17Activity.class);
                      context.startActivity(iractivity17);
                  }
@@ -168,7 +169,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
                      Intent iractivity20 = new Intent(context, tema20Activity.class);
                      context.startActivity(iractivity20);
                  }
-               /* if (items.get(position).getTitulo().matches("tema 21")){
+               if (items.get(position).getTitulo().matches("tema 21")){
                      Intent iractivity21 = new Intent();
                      context.startActivity(iractivity21);
                  }

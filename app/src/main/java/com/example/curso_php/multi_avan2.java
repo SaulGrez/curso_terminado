@@ -27,7 +27,7 @@ public class multi_avan2 extends AppCompatActivity {
 
 
 
-        Uri uri = Uri.parse("");
+        Uri uri = Uri.parse("https://firebasestorage.googleapis.com/v0/b/php-app-5b4e1.appspot.com/o/Multimedia_avanzado%2FTrabajar%20archivos%20con%20PHP.mp4?alt=media&token=c10b714c-4650-4ba7-b99b-6c654982fce0");
         videoView.setVideoURI(uri);
         videoView.start();
     }

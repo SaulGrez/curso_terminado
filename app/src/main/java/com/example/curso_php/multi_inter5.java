@@ -27,7 +27,7 @@ public class multi_inter5 extends AppCompatActivity {
 
 
 
-        Uri uri = Uri.parse("");
+        Uri uri = Uri.parse("https://firebasestorage.googleapis.com/v0/b/php-app-5b4e1.appspot.com/o/Multimedia_intermedio%2F%236%20%20Mezclar%20HTML%20_%20Array%20o%20Arreglos%20-%20Curso%20de%20PHP%20b%C3%A1sico%20y%20desde%20CERO!%20-%20Principiantes.mp4?alt=media&token=1087ab9e-d735-42df-8eb9-8281993e5bf2");
         videoView.setVideoURI(uri);
         videoView.start();
     }

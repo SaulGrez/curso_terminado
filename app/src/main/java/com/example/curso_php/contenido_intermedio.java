@@ -72,12 +72,12 @@ public class contenido_intermedio extends AppCompatActivity implements RecyclerA
         itemLists.add(new ItemList("función: array_combine", "Aplicación y uso de la función array_combine", R.drawable.transparent_b));
         itemLists.add(new ItemList("función: array_count_values", "Uso de la función para contar valores de una matriz", R.drawable.transparent_b));
         itemLists.add(new ItemList("función: array_diff", "Funccón para calcular la diferencia entre 2 matrices.", R.drawable.transparent_b));
-        itemLists.add(new ItemList("Tema 17", "Descripcion del tema a ver.", R.drawable.transparent_b));
-        itemLists.add(new ItemList("Tema 18", "Descripcion del tema a ver.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("", "", R.drawable.transparent_b));
+       /*  itemLists.add(new ItemList("Tema 18", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 19", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 20", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 21", "Descripcion del tema a ver.", R.drawable.transparent_b));
-         /* itemLists.add(new ItemList("Tema 22", "Descripcion del tema a ver.", R.drawable.transparent_b));
+         itemLists.add(new ItemList("Tema 22", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 23", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 24", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 25", "Descripcion del tema a ver.", R.drawable.transparent_b));

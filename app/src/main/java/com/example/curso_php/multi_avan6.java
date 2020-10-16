@@ -27,7 +27,7 @@ public class multi_avan6 extends AppCompatActivity {
 
 
 
-        Uri uri = Uri.parse("");
+        Uri uri = Uri.parse("https://firebasestorage.googleapis.com/v0/b/php-app-5b4e1.appspot.com/o/Multimedia_avanzado%2FPHP%205-%20Excepciones%20-%20Ejemplo%20sencillo.mp4?alt=media&token=cc11f932-08f9-400d-be74-7f4fbb7c68d2");
         videoView.setVideoURI(uri);
         videoView.start();
     }

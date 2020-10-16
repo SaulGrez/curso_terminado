@@ -140,7 +140,7 @@ public class RecyclerAdapter2 extends RecyclerView.Adapter<RecyclerAdapter2.Recy
                     context.startActivity(iractivity16);
                 }
 
-                if (items.get(position).getTitulo().matches("Tema 17")){
+                /* if (items.get(position).getTitulo().matches("Tema 17")){
                     Intent iractivity17 = new Intent(context, tema17inActivity.class);
                     context.startActivity(iractivity17);
                 }
@@ -158,7 +158,7 @@ public class RecyclerAdapter2 extends RecyclerView.Adapter<RecyclerAdapter2.Recy
                     context.startActivity(iractivity20);
                 }
 
-                /*if (items.get(position).getTitulo().matches("Tema 21")){
+               if (items.get(position).getTitulo().matches("Tema 21")){
                     Intent iractivity21 = new Intent();
                     context.startActivity(iractivity21);
                 }*/

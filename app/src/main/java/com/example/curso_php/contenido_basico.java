@@ -69,10 +69,10 @@ public class contenido_basico extends AppCompatActivity implements RecyclerAdapt
         itemLists.add(new ItemList("métodos get y post", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("superglobales", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("funciones", "Descripcion del tema a ver.", R.drawable.transparent_b));
-        itemLists.add(new ItemList("tema 15", "Descripcion del tema a ver.", R.drawable.transparent_b));
-        /*itemLists.add(new ItemList("tema 16", "Descripcion del tema a ver.", R.drawable.transparent_b));
-        itemLists.add(new ItemList("tema 17", "Descripcion del tema a ver.", R.drawable.transparent_b));
-        itemLists.add(new ItemList("tema 18", "Descripcion del tema a ver.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("while", "Uso de ciclos ", R.drawable.transparent_b));
+        itemLists.add(new ItemList("do while", "Uso del ciclo do-while en PHP", R.drawable.transparent_b));
+        itemLists.add(new ItemList("", "", R.drawable.transparent_b));
+        /*itemLists.add(new ItemList("tema 18", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("tema 19", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("tema 20", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("tema 21", "Descripcion del tema a ver.", R.drawable.transparent_b));

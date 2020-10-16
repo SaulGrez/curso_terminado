@@ -27,7 +27,7 @@ public class multi_inter3 extends AppCompatActivity {
 
 
 
-        Uri uri = Uri.parse("");
+        Uri uri = Uri.parse("https://firebasestorage.googleapis.com/v0/b/php-app-5b4e1.appspot.com/o/Multimedia_intermedio%2F4.-%20PHP%20Orientado%20a%20Objetos%20-%20Constructores%20%26%20Destructores.mp4?alt=media&token=b2ab880c-e186-44ec-8004-446090deceb0");
         videoView.setVideoURI(uri);
         videoView.start();
     }

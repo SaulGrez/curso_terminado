@@ -27,7 +27,7 @@ public class multi_inter2 extends AppCompatActivity {
 
 
 
-        Uri uri = Uri.parse("");
+        Uri uri = Uri.parse("https://firebasestorage.googleapis.com/v0/b/php-app-5b4e1.appspot.com/o/Multimedia_intermedio%2F6.-%20PHP%20Orientado%20a%20Objetos%20-%20Herencia.mp4?alt=media&token=8ff4e566-e234-4fc5-96f4-0a4be763d2a3");
         videoView.setVideoURI(uri);
         videoView.start();
     }

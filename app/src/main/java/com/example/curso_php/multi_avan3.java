@@ -27,7 +27,7 @@ public class multi_avan3 extends AppCompatActivity {
 
 
 
-        Uri uri = Uri.parse("");
+        Uri uri = Uri.parse("https://firebasestorage.googleapis.com/v0/b/php-app-5b4e1.appspot.com/o/Multimedia_avanzado%2FCREAR%2C%20ELIMINAR%20Y%20ESCRIBIR%20ARCHIVOS%20CON%20PHP%20-%20FOPEN%2C%20FWRITE%20Y%20UNLINK.mp4?alt=media&token=444ec2aa-2258-4f71-8e22-be9467f810de");
         videoView.setVideoURI(uri);
         videoView.start();
     }

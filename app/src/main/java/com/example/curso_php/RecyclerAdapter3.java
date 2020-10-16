@@ -66,16 +66,16 @@ public class RecyclerAdapter3 extends RecyclerView.Adapter<RecyclerAdapter3.Recy
                     Intent iractivity2 = new Intent(context, tema2avaActivity.class);
                     context.startActivity(iractivity2);
                 }
-                if (items.get(position).getTitulo().matches("función fopen()")){
+                if (items.get(position).getTitulo().matches("función fopen")){
                     Intent iractivity3 = new Intent(context, tema3avaActivity.class);
                     context.startActivity(iractivity3);
                 }
-                if (items.get(position).getTitulo().matches("función fread()")){
+                if (items.get(position).getTitulo().matches("función fread")){
                     Intent iractivity4 = new Intent(context, tema4avaActivity.class);
                     context.startActivity(iractivity4);
                 }
 
-                if (items.get(position).getTitulo().matches("función fclose()")){
+                if (items.get(position).getTitulo().matches("función fclose")){
                     Intent iractivity5 = new Intent(context, tema5avaActivity.class);
                     context.startActivity(iractivity5);
                 }

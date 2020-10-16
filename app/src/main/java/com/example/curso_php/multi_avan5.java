@@ -27,7 +27,7 @@ public class multi_avan5 extends AppCompatActivity {
 
 
 
-        Uri uri = Uri.parse("");
+        Uri uri = Uri.parse("https://firebasestorage.googleapis.com/v0/b/php-app-5b4e1.appspot.com/o/Multimedia_avanzado%2FSesiones%20en%20PHP%20-%20Uso%20de%20Sesiones%20en%20PHP%20-%20Ejemplos%20de%20Sesiones%20en%20PHP%20-%20FACILITO%20PHP%2020-PARTE%201.mp4?alt=media&token=e4c286d3-7297-44bb-9c57-ae862ffaafa5");
         videoView.setVideoURI(uri);
         videoView.start();
     }

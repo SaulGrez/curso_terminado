@@ -33,28 +33,6 @@
         app:layout_constraintVertical_bias="0.01"
         app:srcCompat="@drawable/mini_logo" />
 
-    <Button
-        android:id="@+id/boton_curso"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="2dp"
-        android:background="@drawable/custom_button"
-        android:onClick="Multii"
-        android:text="Play List"
-        android:textColor="#FECB00"
-        android:textColorHint="@color/colorPrimary"
-        android:textColorLink="#FFFFFF"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.136" />
-
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="30dp"
@@ -89,7 +67,7 @@
         android:layout_height="40dp"
         android:background="@drawable/custom_button2"
         android:onClick="Multimedia2"
-        android:text="video2"
+        android:text="herencia"
         android:textColor="#D34A65"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -104,7 +82,7 @@
         android:layout_height="40dp"
         android:background="@drawable/custom_button2"
         android:onClick="Multimedia3"
-        android:text="video3"
+        android:text="constructores"
         android:textColor="#D34A65"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -119,7 +97,7 @@
         android:layout_height="40dp"
         android:background="@drawable/custom_button2"
         android:onClick="Multimedia4"
-        android:text="video4"
+        android:text="Métodos"
         android:textColor="#D34A65"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -134,7 +112,7 @@
         android:layout_height="40dp"
         android:background="@drawable/custom_button2"
         android:onClick="Multimedia5"
-        android:text="video5"
+        android:text="arreglos"
         android:textColor="#D34A65"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -149,13 +127,27 @@
         android:layout_height="40dp"
         android:background="@drawable/custom_button2"
         android:onClick="Multimedia6"
-        android:text="video6"
+        android:text="arreglos multidimensionales"
         android:textColor="#D34A65"
+        android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.81"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.72" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PlayList"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.157" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

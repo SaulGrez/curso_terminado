@@ -6,10 +6,12 @@ import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -49,6 +51,7 @@ public class RecyclerAdapter3 extends RecyclerView.Adapter<RecyclerAdapter3.Recy
     @Override
     public void onBindViewHolder(@NonNull final RecyclerHolder holder, final int position) {
         final ItemList item = items.get(position);
+        holder.cva.setAnimation(AnimationUtils.loadAnimation(context,R.anim.fade_transition));
         holder.imgItem.setImageResource(item.getImgResource());
         holder.tvTitulo.setText(item.getTitulo());
         holder.tvDescripcion.setText(item.getDescripcion());
@@ -66,26 +69,26 @@ public class RecyclerAdapter3 extends RecyclerView.Adapter<RecyclerAdapter3.Recy
                     Intent iractivity2 = new Intent(context, tema2avaActivity.class);
                     context.startActivity(iractivity2);
                 }
-                if (items.get(position).getTitulo().matches("función fopen")){
+                if (items.get(position).getTitulo().matches("función fopen()")){
                     Intent iractivity3 = new Intent(context, tema3avaActivity.class);
                     context.startActivity(iractivity3);
                 }
-                if (items.get(position).getTitulo().matches("función fread")){
+                if (items.get(position).getTitulo().matches("función fread()")){
                     Intent iractivity4 = new Intent(context, tema4avaActivity.class);
                     context.startActivity(iractivity4);
                 }
 
-                if (items.get(position).getTitulo().matches("función fclose")){
+                if (items.get(position).getTitulo().matches("función fclose()")){
                     Intent iractivity5 = new Intent(context, tema5avaActivity.class);
                     context.startActivity(iractivity5);
                 }
 
-                if (items.get(position).getTitulo().matches("Tema 6")){
+                if (items.get(position).getTitulo().matches("función fwrite()")){
                     Intent iractivity6 = new Intent(context, tema6avaActivity.class);
                     context.startActivity(iractivity6);
                 }
 
-                if (items.get(position).getTitulo().matches("Tema 7")){
+                if (items.get(position).getTitulo().matches("cookies")){
                     Intent iractivity7 = new Intent(context, tema7avaActivity.class);
                     context.startActivity(iractivity7);
                 }
@@ -195,12 +198,14 @@ public class RecyclerAdapter3 extends RecyclerView.Adapter<RecyclerAdapter3.Recy
         private ImageView imgItem;
         private TextView tvTitulo;
         private TextView tvDescripcion;
+        CardView cva;
 
         public RecyclerHolder(@NonNull View itemView) {
             super(itemView);
             imgItem = itemView.findViewById(R.id.imgItem);
             tvTitulo = itemView.findViewById(R.id.tvTitulo);
             tvDescripcion = itemView.findViewById(R.id.tvDescripcion);
+            cva = itemView.findViewById(R.id.cvb);
 
         }
     }

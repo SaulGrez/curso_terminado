@@ -55,13 +55,13 @@ public class contenido_avanzado extends AppCompatActivity implements RecyclerAda
         List<ItemList> itemLists = new ArrayList<>();
         itemLists.add(new ItemList("include y require", "Nos ayuda a incluir varios archivos, incluidos texto o códigos, en un solo programa.", R.drawable.transparent_b));
         itemLists.add(new ItemList("manejo de archivos", "Uso de las funciones: fopen(), fread(), fwrite(), fclose().", R.drawable.transparent_b));
-        itemLists.add(new ItemList("función fopen", "Se usa para abrir un archivo o una URL.", R.drawable.transparent_b));
-        itemLists.add(new ItemList("función fread", "Es una función incorporada que lee bytes de longitud.", R.drawable.transparent_b));
-        itemLists.add(new ItemList("función fclose", "Función incorporada que se utiliza para cerrar un archivo", R.drawable.transparent_b));
-        itemLists.add(new ItemList("Tema 6", "Descripcion del tema 6.", R.drawable.transparent_b));
-        itemLists.add(new ItemList("Tema 7", "Descripcion del tema 7.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("función fopen()", "Función incorporada que se usa para abrir un archivo o una URL.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("función fread()", "Función incorporada que lee bytes de longitud.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("función fclose()", "Función incorporada que se utiliza para cerrar un archivo", R.drawable.transparent_b));
+        itemLists.add(new ItemList("función fwrite()", "Función incorporada que se usa para escribir en un archivo abierto.", R.drawable.transparent_b));
+        itemLists.add(new ItemList("cookies", "Realiza un seguimiento de información.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 8", "Descripcion del tema 8.", R.drawable.transparent_b));
-        itemLists.add(new ItemList("Tema 9", "Descripcion del tema 9.", R.drawable.transparent_b));
+        /*itemLists.add(new ItemList("Tema 9", "Descripcion del tema 9.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 10", "Descripcion del tema 10.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 11", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 12", "Descripcion del tema a ver.", R.drawable.transparent_b));
@@ -74,7 +74,7 @@ public class contenido_avanzado extends AppCompatActivity implements RecyclerAda
         itemLists.add(new ItemList("Tema 19", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 20", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("", "", R.drawable.transparent_b));
-          /* itemLists.add(new ItemList("Tema 22", "Descripcion del tema a ver.", R.drawable.transparent_b));
+           itemLists.add(new ItemList("Tema 22", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 23", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 24", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 25", "Descripcion del tema a ver.", R.drawable.transparent_b));

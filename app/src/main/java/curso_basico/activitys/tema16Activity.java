@@ -70,7 +70,7 @@ public class tema16Activity extends AppCompatActivity {
 
     //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     public void ant_tema(View view) {
-        Intent anterior = new Intent(this, tema15Activity.class);
+        Intent anterior = new Intent(this, tema14Activity.class);
         startActivity(anterior);
         finish();
     }

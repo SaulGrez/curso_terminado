@@ -118,6 +118,11 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
                      context.startActivity(iractivity9);
                  }
 
+              if (items.get(position).getTitulo().matches("sentencia switch")){
+                     Intent iractivity15 = new Intent(context, tema15Activity.class);
+                     context.startActivity(iractivity15);
+                 }
+
                  if (items.get(position).getTitulo().matches("bucles")){
                      Intent iractivity10 = new Intent(context, tema10Activity.class);
                      context.startActivity(iractivity10);
@@ -142,26 +147,22 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
                      context.startActivity(iractivity14);
                  }
 
-                 if (items.get(position).getTitulo().matches("while")){
-                     Intent iractivity15 = new Intent(context, tema15Activity.class);
-                     context.startActivity(iractivity15);
-                 }
-                if (items.get(position).getTitulo().matches("do while")){
+                 if (items.get(position).getTitulo().matches("funciones matemáticas")){
                      Intent iractivity16 = new Intent(context, tema16Activity.class);
                      context.startActivity(iractivity16);
                  }
 
-                  /* if (items.get(position).getTitulo().matches("tema 17")){
+                 if (items.get(position).getTitulo().matches("tipos de errores")){
                      Intent iractivity17 = new Intent(context, tema17Activity.class);
                      context.startActivity(iractivity17);
                  }
 
-                 if (items.get(position).getTitulo().matches("tema 18")){
+                 if (items.get(position).getTitulo().matches("manejo de errores")){
                      Intent iractivity18 = new Intent(context, tema18Activity.class);
                      context.startActivity(iractivity18);
                  }
 
-                 if (items.get(position).getTitulo().matches("tema 19")){
+                 /*  if (items.get(position).getTitulo().matches("tema 19")){
                      Intent iractivity19 = new Intent(context, tema19Activity.class);
                      context.startActivity(iractivity19);
                  }

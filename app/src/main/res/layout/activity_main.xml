@@ -17,7 +17,7 @@
         android:layout_marginBottom="2dp"
         android:background="@drawable/custom_button"
         android:onClick="Siguiente"
-        android:text="Bienvenido"
+        android:text="Bienvenido al Curso"
         android:textColor="#FECB00"
         android:textColorHint="@color/colorPrimary"
         android:textColorLink="#FFFFFF"
@@ -28,28 +28,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.553" />
-
-    <Button
-        android:id="@+id/boton_salir"
-        android:layout_width="218dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="2dp"
-        android:background="@drawable/custom_button"
-        android:onClick="Siguiente"
-        android:text="Salir"
-        android:textColor="#FECB00"
-        android:textColorHint="@color/colorPrimary"
-        android:textColorLink="#FFFFFF"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.523"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.677" />
 
     <Button
         android:id="@+id/boton_acerca_de"

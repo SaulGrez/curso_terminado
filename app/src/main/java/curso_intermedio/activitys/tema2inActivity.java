@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.curso_php.R;
@@ -36,6 +37,14 @@ public class tema2inActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inter2);
 
+        Button btnBack = (Button) findViewById(R.id.btnBack);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
+
 
         t2recyclerView = (RecyclerView) findViewById(R.id.rvtema2);
         t2recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -61,13 +70,6 @@ public class tema2inActivity extends AppCompatActivity {
                 Toast.makeText(tema2inActivity.this,"Opssss.... Algo va mal",Toast.LENGTH_SHORT).show();
             }
         });
-    }
-
-    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    public void Anterior(View view) {
-        Intent anterior = new Intent(this, contenido_intermedio.class);
-        startActivity(anterior);
-        finish();
     }
 
     //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

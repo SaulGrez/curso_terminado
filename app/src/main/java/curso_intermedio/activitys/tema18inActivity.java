@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 import curso_intermedio.adapters.AdapIT18;
 import com.example.curso_php.R;
@@ -32,6 +33,14 @@ public class tema18inActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inter18);
+
+        Button btnBack = (Button) findViewById(R.id.btnBack);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
 
         t18recyclerView = (RecyclerView) findViewById(R.id.rvtema18);
         t18recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -58,13 +67,6 @@ public class tema18inActivity extends AppCompatActivity {
             }
         });
     }
-    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    public void Anterior(View view) {
-        Intent anterior = new Intent(this, contenido_intermedio.class);
-        startActivity(anterior);
-        finish();
-    }
-
     //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     public void ant_tema(View view) {
         Intent anterior = new Intent(this, tema16inActivity.class);

@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -29,6 +30,14 @@ public class tema13avaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ava13);
+
+        Button btnBack = (Button) findViewById(R.id.btnBack);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
 
         t13recyclerView = (RecyclerView) findViewById(R.id.rvtema13);
         t13recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -55,14 +64,6 @@ public class tema13avaActivity extends AppCompatActivity {
             }
         });
     }
-    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    public void Anterior(View view) {
-        Intent anterior = new Intent(this, contenido_avanzado.class);
-        startActivity(anterior);
-        finish();
-    }
-
-
     //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     public void ant_tema(View view) {
         Intent anterior = new Intent(this, tema12avaActivity.class);

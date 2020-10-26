@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 public class multi_avanzado extends AppCompatActivity {
 
@@ -12,68 +13,61 @@ public class multi_avanzado extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_multi_avanzado);
-    }
 
-    //--------------------------------------------------------------------------
-    public void Anterior(View view) {
-        Intent anterior = new Intent(this, contenido_avanzado.class);
-        startActivity(anterior);
-        finish();
-    }
+        Button btnBack = (Button) findViewById(R.id.btnBack);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
 
+        Button btn1 = (Button) findViewById(R.id.button);
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(multi_avanzado.this,multi_avan1.class));
+            }
+        });
 
-    public void logo(View view) {
-        Intent logo= new Intent(this, MainActivity.class);
-        startActivity(logo);
-        finish();
-    }
+        Button btn2=(Button)findViewById(R.id.button2);
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(multi_avanzado.this,multi_avan2.class));
+            }
+        });
 
-    //--------------------------------------------------------------------------
-    public void Multia(View view) {
-        Intent multia = new Intent(this, multi_avanzado.class);
-        startActivity(multia);
-        finish();
-    }
+        Button btn3=(Button)findViewById(R.id.button3);
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(multi_avanzado.this,multi_avan3.class));
+            }
+        });
 
-    //--------------------------------------------------------------------------
-    //--------------------------------------------------------------------------
-    public void Multimedia(View view) {
-        Intent multimedia = new Intent(this, multi_avan1.class);
-        startActivity(multimedia);
-        finish();
-    }
+        Button btn4=(Button)findViewById(R.id.button4);
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(multi_avanzado.this,multi_avan4.class));
+            }
+        });
 
-    //--------------------------------------------------------------------------
-    public void Multimedia2(View view) {
-        Intent multimedia2 = new Intent(this, multi_avan2.class);
-        startActivity(multimedia2);
-        finish();
-    }
-    //--------------------------------------------------------------------------
-    public void Multimedia3(View view) {
-        Intent multimedia3 = new Intent(this, multi_avan3.class);
-        startActivity(multimedia3);
-        finish();
-    }
+        Button btn5=(Button)findViewById(R.id.button5);
+        btn5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(multi_avanzado.this,multi_avan5.class));
+            }
+        });
 
-    //--------------------------------------------------------------------------
-    public void Multimedia4(View view) {
-        Intent multimedia4 = new Intent(this, multi_avan4.class);
-        startActivity(multimedia4);
-        finish();
-    }
-
-    //--------------------------------------------------------------------------
-    public void Multimedia5(View view) {
-        Intent multimedia5 = new Intent(this, multi_avan5.class);
-        startActivity(multimedia5);
-        finish();
-    }
-
-    //--------------------------------------------------------------------------
-    public void Multimedia6(View view) {
-        Intent multimedia6 = new Intent(this, multi_avan6.class);
-        startActivity(multimedia6);
-        finish();
+        Button btn6=(Button)findViewById(R.id.button6);
+        btn6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(multi_avanzado.this,multi_avan6.class));
+            }
+        });
     }
 }

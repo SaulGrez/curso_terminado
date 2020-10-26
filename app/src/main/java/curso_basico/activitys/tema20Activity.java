@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 import curso_basico.adapters.AdapT20;
 import com.example.curso_php.R;
@@ -34,6 +35,14 @@ public class tema20Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tema20);
 
+        Button btnBack = (Button) findViewById(R.id.btnBack);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
+
         t20recyclerView = (RecyclerView) findViewById(R.id.rvtema20);
         t20recyclerView.setLayoutManager(new LinearLayoutManager(this));
         t20list = new ArrayList<Tema_20>();
@@ -59,13 +68,6 @@ public class tema20Activity extends AppCompatActivity {
 
             }
         }) ;
-    }
-
-    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    public void Anterior(View view) {
-        Intent anterior = new Intent(this, contenido_basico.class);
-        startActivity(anterior);
-        finish();
     }
 
     //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

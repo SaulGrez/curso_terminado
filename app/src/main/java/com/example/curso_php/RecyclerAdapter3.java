@@ -6,10 +6,12 @@ import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -49,6 +51,7 @@ public class RecyclerAdapter3 extends RecyclerView.Adapter<RecyclerAdapter3.Recy
     @Override
     public void onBindViewHolder(@NonNull final RecyclerHolder holder, final int position) {
         final ItemList item = items.get(position);
+        holder.cva.setAnimation(AnimationUtils.loadAnimation(context,R.anim.fade_transition));
         holder.imgItem.setImageResource(item.getImgResource());
         holder.tvTitulo.setText(item.getTitulo());
         holder.tvDescripcion.setText(item.getDescripcion());
@@ -80,35 +83,35 @@ public class RecyclerAdapter3 extends RecyclerView.Adapter<RecyclerAdapter3.Recy
                     context.startActivity(iractivity5);
                 }
 
-                if (items.get(position).getTitulo().matches("Tema 6")){
+                if (items.get(position).getTitulo().matches("función fwrite")){
                     Intent iractivity6 = new Intent(context, tema6avaActivity.class);
                     context.startActivity(iractivity6);
                 }
 
-                if (items.get(position).getTitulo().matches("Tema 7")){
+                if (items.get(position).getTitulo().matches("cookies")){
                     Intent iractivity7 = new Intent(context, tema7avaActivity.class);
                     context.startActivity(iractivity7);
                 }
 
-                if (items.get(position).getTitulo().matches("Tema 8")){
+                if (items.get(position).getTitulo().matches("sesiones")){
                     Intent iractivity8 = new Intent(context, tema8avaActivity.class);
                     context.startActivity(iractivity8);
                 }
-                if (items.get(position).getTitulo().matches("Tema 9")){
+                if (items.get(position).getTitulo().matches("filter")){
                     Intent iractivity9 = new Intent(context, tema9avaActivity.class);
                     context.startActivity(iractivity9);
                 }
-                if (items.get(position).getTitulo().matches("Tema 10")){
+                if (items.get(position).getTitulo().matches("función cal_days_in_month")){
                     Intent iractivity10 = new Intent(context, tema10avaActivity.class);
                     context.startActivity(iractivity10);
                 }
 
-                if (items.get(position).getTitulo().matches("Tema 11")){
+                if (items.get(position).getTitulo().matches("función cal_info")){
                     Intent iractivity11 = new Intent(context, tema11avaActivity.class);
                     context.startActivity(iractivity11);
                 }
 
-                if (items.get(position).getTitulo().matches("Tema 12")){
+                if (items.get(position).getTitulo().matches("función easter_date")){
                     Intent iractivity12 = new Intent(context, tema12avaActivity.class);
                     context.startActivity(iractivity12);
                 }
@@ -195,12 +198,15 @@ public class RecyclerAdapter3 extends RecyclerView.Adapter<RecyclerAdapter3.Recy
         private ImageView imgItem;
         private TextView tvTitulo;
         private TextView tvDescripcion;
+        CardView cva;
 
         public RecyclerHolder(@NonNull View itemView) {
             super(itemView);
             imgItem = itemView.findViewById(R.id.imgItem);
             tvTitulo = itemView.findViewById(R.id.tvTitulo);
             tvDescripcion = itemView.findViewById(R.id.tvDescripcion);
+            cva = itemView.findViewById(R.id.cvb);
+
 
         }
     }

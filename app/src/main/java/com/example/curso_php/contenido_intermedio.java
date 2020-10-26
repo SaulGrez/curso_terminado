@@ -13,6 +13,7 @@ import java.util.List;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 import curso_intermedio.activitys.temai_1;
 
@@ -23,7 +24,7 @@ public class contenido_intermedio extends AppCompatActivity implements RecyclerA
     private SearchView svSearch;
     private RecyclerAdapter2 adapter;
     private List<ItemList> items;
-
+    Button btnBackFun;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +33,22 @@ public class contenido_intermedio extends AppCompatActivity implements RecyclerA
         initViews();
         initValues();
         initListener();
+
+        btnBackFun=(Button)findViewById(R.id.btnBackFun);
+        btnBackFun.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
+
+        Button btnMulti2 = (Button) findViewById(R.id.btnMulti2);
+        btnMulti2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(contenido_intermedio.this,multi_intermedio.class));
+            }
+        });
     }
 
 
@@ -74,8 +91,8 @@ public class contenido_intermedio extends AppCompatActivity implements RecyclerA
         itemLists.add(new ItemList("función: array_count_values", "Uso de la función para contar valores de una matriz", R.drawable.transparent_b));
         itemLists.add(new ItemList("función: array_diff", "Función para calcular la diferencia entre 2 matrices", R.drawable.transparent_b));
         itemLists.add(new ItemList("funciones date and time", "Funciones tiempo y fecha en PHP", R.drawable.transparent_b));
-        itemLists.add(new ItemList("", "", R.drawable.transparent_b));
-        /* itemLists.add(new ItemList("Tema 20", "Descripcion del tema a ver.", R.drawable.transparent_b));
+        /*itemLists.add(new ItemList("", "", R.drawable.transparent_b));
+         itemLists.add(new ItemList("Tema 20", "Descripcion del tema a ver.", R.drawable.transparent_b));
           itemLists.add(new ItemList("Tema 21", "Descripcion del tema a ver.", R.drawable.transparent_b));
          itemLists.add(new ItemList("Tema 22", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("Tema 23", "Descripcion del tema a ver.", R.drawable.transparent_b));
@@ -112,11 +129,11 @@ public class contenido_intermedio extends AppCompatActivity implements RecyclerA
 
 
     //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    public void Anterior(View view) {
+    /*public void Anterior(View view) {
         Intent anterior = new Intent(this, Curso.class);
         startActivity(anterior);
         finish();
-    }
+    }*/
 
 
 

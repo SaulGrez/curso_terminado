@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
@@ -17,6 +18,14 @@ public class multi_avan1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_multi_avan1);
+
+        Button btnBack=(Button)findViewById(R.id.btnBack);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
 
 
         MediaController mediaController = new MediaController(this);
@@ -31,12 +40,4 @@ public class multi_avan1 extends AppCompatActivity {
         videoView.setVideoURI(uri);
         videoView.start();
     }
-
-    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    public void ant_tema(View view) {
-        Intent anterior = new Intent(this, multi_avanzado.class);
-        startActivity(anterior);
-        finish();
-    }
-    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 }

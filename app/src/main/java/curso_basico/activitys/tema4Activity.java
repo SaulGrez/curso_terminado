@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 import com.example.curso_php.R;
 import com.example.curso_php.contenido_basico;
@@ -34,6 +35,14 @@ public class tema4Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tema4);
 
+        Button btnBack = (Button) findViewById(R.id.btnBack);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
+
         t4recyclerView = (RecyclerView) findViewById(R.id.rvtema4);
         t4recyclerView.setLayoutManager(new LinearLayoutManager(this));
         t4list = new ArrayList<Tema_4>();
@@ -58,12 +67,6 @@ public class tema4Activity extends AppCompatActivity {
 
             }
         });
-    }
-    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    public void Anterior(View view) {
-        Intent anterior = new Intent(this, contenido_basico.class);
-        startActivity(anterior);
-        finish();
     }
 
     //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

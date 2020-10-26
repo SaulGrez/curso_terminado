@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
@@ -29,11 +30,21 @@ import curso_intermedio.temas.Temain_6;
 public class multi1 extends AppCompatActivity {
 
     VideoView videoView;
+    Button btnBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_multi1);
+
+        btnBack=(Button)findViewById(R.id.btnBack);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
+
 
         MediaController mediaController = new MediaController(this);
 
@@ -49,28 +60,5 @@ public class multi1 extends AppCompatActivity {
 
 
     }
-
-    /*
-    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    public void Anterior(View view) {
-        Intent anterior = new Intent(this, Curso.class);
-        startActivity(anterior);
-        finish();
-    }*/
-
-
-    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-   public void ant_tema(View view) {
-        Intent anterior = new Intent(this, multi_basico.class);
-        startActivity(anterior);
-        finish();
-    }
-    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-    /*public void sig_tema(View view) {
-        Intent siguiente = new Intent(this, tema2avaActivity.class);
-        startActivity(siguiente);
-        finish();
-    }*/
 
 }

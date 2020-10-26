@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 import com.example.curso_php.R;
 import com.example.curso_php.contenido_basico;
@@ -28,11 +29,19 @@ public class tema3Activity extends AppCompatActivity {
     RecyclerView t3recyclerView;
     ArrayList<Tema_3> t3list;
     AdatT3 t3adapter;
-
+    Button btnBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tema3);
+
+        btnBack=(Button)findViewById(R.id.btnBack);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
 
         t3recyclerView = (RecyclerView) findViewById(R.id.rvtema3);
         t3recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -59,13 +68,6 @@ public class tema3Activity extends AppCompatActivity {
             }
         });
 
-    }
-
-    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    public void Anterior(View view) {
-        Intent anterior = new Intent(this, contenido_basico.class);
-        startActivity(anterior);
-        finish();
     }
 
     //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

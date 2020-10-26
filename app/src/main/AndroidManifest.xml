@@ -14,7 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".multi_avan6"></activity>
+        <activity android:name=".ReferActivity"></activity>
+        <activity android:name=".multi_avan6" />
         <activity android:name=".multi_avan5" />
         <activity android:name=".multi_avan4" />
         <activity android:name=".multi_avan3" />

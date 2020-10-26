@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 import curso_basico.adapters.AdapT17;
 import com.example.curso_php.R;
@@ -34,6 +35,14 @@ public class tema17Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tema17);
 
+        Button btnBack = (Button) findViewById(R.id.btnBack);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
+
 
         t17recyclerView = (RecyclerView) findViewById(R.id.rvtema17);
         t17recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -59,13 +68,6 @@ public class tema17Activity extends AppCompatActivity {
 
             }
         });
-    }
-
-    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    public void Anterior(View view) {
-        Intent anterior = new Intent(this, contenido_basico.class);
-        startActivity(anterior);
-        finish();
     }
 
     //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

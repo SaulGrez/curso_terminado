@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">curso_php</string>
+    <string name="app_name">App_php</string>
+    <string name="link1">
+        <a href="https://www.geeksforgeeks.org/php/?ref=lbp">Desconocido. (2018). PHP Tutorials. 2020, de GeeksforGeeks Sitio web: https://www.geeksforgeeks.org/php/</a>
+    </string>
+    <string name="link2">
+        <a href="https://www.tutorialspoint.com/php/php_introduction.htm">tutorialspoint. (2019). PHP Tutorial. 2020, de tutorialspoint Sitio web: https://www.tutorialspoint.com/php/index.htm</a>
+    </string>
+    <string name="link3">
+        <a href="https://www.php.net/manual/es/index.php">Peter Cowburn. (2020). Manual de PHP. 2020, de The PHP Group Sitio web: https://www.php.net/manual/es/index.php</a>
+    </string>
+    <string name="link4">
+        <a href="https://phpapprentice.com">Andrew Davis. (-). PHP Apprentice. 2020, de - Sitio web: https://phpapprentice.com</a>
+    </string>
+
 </resources>

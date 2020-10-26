@@ -20,7 +20,7 @@
         android:layout_height="27dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="160dp"
+        android:layout_marginEnd="189dp"
         android:layout_marginBottom="171dp"
         android:background="#ffffff"
         android:src="@drawable/loadgris" />

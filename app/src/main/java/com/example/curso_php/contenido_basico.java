@@ -12,6 +12,7 @@ import java.util.List;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 import curso_basico.activitys.tema1;
 
@@ -21,7 +22,7 @@ public class contenido_basico extends AppCompatActivity implements RecyclerAdapt
     private SearchView svSearch;
     private RecyclerAdapter adapter;
     private List<ItemList> items;
-
+    Button btnBackIn,btnMulti1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +31,22 @@ public class contenido_basico extends AppCompatActivity implements RecyclerAdapt
         initViews();
         initValues();
         initListener();
+
+        btnBackIn=(Button)findViewById(R.id.btnBackIn);
+        btnBackIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
+
+        btnMulti1=(Button)findViewById(R.id.btnMulti1);
+        btnMulti1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(contenido_basico.this,multi_basico.class));
+            }
+        });
 
     }
 
@@ -73,8 +90,8 @@ public class contenido_basico extends AppCompatActivity implements RecyclerAdapt
         itemLists.add(new ItemList("funciones matemáticas", "Palabras reservadas y sus funciones matemáticas", R.drawable.transparent_b));
         itemLists.add(new ItemList("tipos de errores", "Tipos de errores en PHP", R.drawable.transparent_b));
         itemLists.add(new ItemList("manejo de errores", "Corregir algunos errores comunes en PHP", R.drawable.transparent_b));
-        itemLists.add(new ItemList("", "", R.drawable.transparent_b));
-         /*itemLists.add(new ItemList("tema 22", "Descripcion del tema a ver.", R.drawable.transparent_b));
+        /*itemLists.add(new ItemList("", "", R.drawable.transparent_b));
+         itemLists.add(new ItemList("tema 22", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("tema 23", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("tema 24", "Descripcion del tema a ver.", R.drawable.transparent_b));
         itemLists.add(new ItemList("tema 25", "Descripcion del tema a ver.", R.drawable.transparent_b));
@@ -105,20 +122,6 @@ public class contenido_basico extends AppCompatActivity implements RecyclerAdapt
     public boolean onQueryTextChange(String newText) {
         adapter.filter(newText);
         return false;
-    }
-
-    //--------------------------------------------------------------------------
-    public void Anterior(View view) {
-        Intent anterior = new Intent(this, Curso.class);
-        startActivity(anterior);
-        finish();
-    }
-
-    //--------------------------------------------------------------------------
-    public void playlist(View view) {
-        Intent playlist = new Intent(this, multi_basico.class);
-        startActivity(playlist);
-        finish();
     }
 
 }

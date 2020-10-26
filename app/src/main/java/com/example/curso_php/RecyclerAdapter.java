@@ -6,10 +6,12 @@ import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -70,7 +72,8 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
     @Override
     public void onBindViewHolder(@NonNull final RecyclerHolder holder, final int position) {
          final ItemList item = items.get(position);
-         holder.imgItem.setImageResource(item.getImgResource());
+        holder.cvb.setAnimation(AnimationUtils.loadAnimation(context,R.anim.fade_transition));
+        holder.imgItem.setImageResource(item.getImgResource());
          holder.tvTitulo.setText(item.getTitulo());
          holder.tvDescripcion.setText(item.getDescripcion());
 
@@ -255,12 +258,14 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Recycl
         private ImageView imgItem;
         private TextView tvTitulo;
         private TextView tvDescripcion;
+        CardView cvb;
 
         public RecyclerHolder(@NonNull View itemView) {
             super(itemView);
             imgItem = itemView.findViewById(R.id.imgItem);
             tvTitulo = itemView.findViewById(R.id.tvTitulo);
             tvDescripcion = itemView.findViewById(R.id.tvDescripcion);
+            cvb = itemView.findViewById(R.id.cvb);
 
         }
     }
